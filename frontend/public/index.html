@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>PDF compactor</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+  
+  <!-- Bootstrap css -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="header" class="header header-hide">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto"><span>PDF</span> Compactor</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about-us">User</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="menu-has-children" ><a href="">language</a>
+            <ul>
+              <li><a href="http://localhost:3100">English</a></li>
+              <li><a href="http://localhost:3100/ch">中文</a></li>
+              <!-- <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li> -->
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    upload Section
+  ============================-->
+  <section id="hero" class="wow fadeIn">
+    <div class="hero-container">
+      <h1>Welcome to pdf compactor</h1>
+      <h2> </h2>
+      <img src="img/hero-img.png" alt="Hero Imgs">
+      <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" class="btn btn-primary mt-8" name="logo"/>
+        <input type="submit" class="btn btn-primary mt-8" method="post"id = "upload" value="Upload">
+      </form> 
+    </div>
+
+  </section><!-- #upload -->
+
+  <!--==========================
+    Filelist
+  ============================-->
+  
+  <section id="about-us" class="about-us padd-section wow fadeInUp">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Manage Your Files</h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-left">
+            <div class="instruct">
+              <h2>How to reduce a PDF size online:</h2>
+              <br>
+              <ul>
+                <li>1. To start, upload your file to our PDF compressor.</li>
+                <li>2. Our tool will automatically start to shrink the file.</li>
+                <li>3. Download the compressed PDF file to your computer.</li>
+                <li>4. Delete your files if you want to.</li>
+              </ul>
+            </div>
+
+            <div class = "filelist">
+              <button type="button" id="submit" class="btn btn-success" disabled="">File List</button>
+              <ul id="filelist" class="list-unstyled"></ul>
+              <!-- <img src="img/about-img.png" alt="About"> -->
+            </div>
+
+          </div>
+        </div>
+   
+  </section>
+
+  <!--==========================
+    Team Section
+  ============================-->
+  <section id="team" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+
+        <h2>Team Member</h2>
+        <p class="separator">students from USC EE599</p>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-md-6 col-md-4 col-lg-3">
+          <div class="team-block bottom">
+            <img src="img/team/1.jpg" class="img-responsive" alt="img">
+            <div class="team-content">
+              <span>Producer</span>
+              <h4>YUE ZHANG</h4>
+            </div>
+          </div>
+        </div>
+
+       <div class="col-md-6 col-md-4 col-lg-3">
+          <div class="team-block bottom">
+            <img src="img/team/2.jpg" class="img-responsive" alt="img">
+            <div class="team-content">
+              <span>Producer</span>
+              <h4>SiQi Xu</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-md-4 col-lg-3">
+          <div class="team-block bottom">
+            <img src="img/team/3.jpg" class="img-responsive" alt="img">
+            <div class="team-content">
+              <span>Producer</span>
+              <h4>ZhiWen Zheng</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--==========================
+    Contact Section
+  ============================-->
+  <section id="contact" class="padd-section wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Contact</h2>
+        <p class="separator">Please Contact us if you have any questions!</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>University of Southern California<br>Los Angeles, CA 90007</p>
+            </div>
+            <br>
+            <div class="email">
+              <i class="fa fa-envelope"></i>
+              <p>yzhang10@usc.edu</p>
+            </div>
+            <br>
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+1 2065918120</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-8">
+          <div class="form">
+            <!-- <div id="sendmessage">Your message has been sent. Thank you!</div> -->
+            <div id="errormessage"></div>
+            <form action="/send-email" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" id = "message" rows="5" placeholder="Message" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- #contact -->
+
+
+<!--==========================
+    Footer
+  ============================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+            <div class="left">
+              <div style="position:relative;width:100px;height:100px;left:30;top: -30px;">
+                <img src="img/back.jpg" alt="" />
+                <!-- <div style="position:absolute;width:100px;height:100px; z-indent:2;left:75px;top: 100px;;">web hit</div> -->
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="https://hitwebcounter.com/counter/counter.php?page=7282823&style=0002&nbdigits=4&type=page&initCount=0" title="User Stats" Alt="PHP Hits Count"   border="0" >
+            </div>
+            <div class = "time"> Times!!!</div>
+  </footer><!-- #footer -->
+
+
+
+  <!-- ======= bottom ======= -->
+  <down class="down">
+      <div class="copyrights">
+        <div class="credits">Designed by students from USC</div>
+        </div>
+  </down><!-- End  bottom -->
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/modal-video/js/modal-video.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+  <!-- <script src = "../app.js"></script> -->
+  <script type="text/javascript" src="script.js"></script>
+
+  <script> 
+  // var total = 0;
+    $(function(){
+        init();
+    })
+
+    function init(){
+        $.ajax({
+            type: 'GET',
+            url:'/getFileList',
+            success: function(data){
+                console.log(data)
+                $.each(data, function(index,item){
+                    $("#filelist").append("<li><a href='/download?path="+"Output/"+item.name+"'>"+
+                        item.name+"</a>&nbsp;&nbsp;&nbsp;&nbsp;"+getFileSize(item.size)+
+                        "&nbsp;&nbsp;&nbsp;&nbsp;<button class= 'btn btn-info btn-xs' onclick='deleteFile(\""+item.path+"\")'>delete</button></li>");
+                })
+            }
+        })
+    }
+
+    function deleteFile(path){
+        var param={"filePath": path};
+        console.log(path)
+        if (confirm('delete?')){
+            $.ajax({
+                type: 'POST',
+                url:'/delete',
+                data: JSON.stringify(param),
+                contentType:'application/json',
+                success: function(data){
+                    window.location.reload();
+                }
+            })
+        }
+
+        return false;
+        
+    }
+
+    function getFileSize(size){
+        if(size < 1024*1024){
+            return (size/1024).toFixed(2)+'KB'
+        }else if(size >= 1024*1024&&size<Math.pow(1024, 3)){
+            return (size/1024.0/1024).toFixed(2)+'MB'
+        }else{
+            return (size/1024.0/1024/1024).toFixed(2)+'GB'
+        }
+        
+    }
+</script>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
