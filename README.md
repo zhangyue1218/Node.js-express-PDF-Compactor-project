@@ -8,6 +8,7 @@
 
 ## Functions
 
+* User can set Quality and DPI to get different compressed size.
 * Store the uploaded files in our own (NodeJS or Python) server.
 * compact the PDF from large size to small size.
 * Implement API endpoints to a file list, user can download, and remove files for user. 
