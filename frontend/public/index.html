@@ -46,7 +46,7 @@
           <li><a href="#about-us">User</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li class="menu-has-children" ><a href="">language</a>
+          <li class="menu-has-children" ><a href="http://localhost:3100">language</a>
             <ul>
               <li><a href="http://localhost:3100">English</a></li>
               <li><a href="http://localhost:3100/ch">中文</a></li>
@@ -65,12 +65,27 @@
   <section id="hero" class="wow fadeIn">
     <div class="hero-container">
       <h1>Welcome to pdf compactor</h1>
-      <h2> </h2>
+      <h3> </h3>
       <img src="img/hero-img.png" alt="Hero Imgs">
-      <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" class="btn btn-primary mt-8" name="logo"/>
-        <input type="submit" class="btn btn-primary mt-8" method="post"id = "upload" value="Upload">
-      </form> 
+          <form id="uploadForm" action="/upload" method="post" role="form" enctype="multipart/form-data">
+            <div calss = "row">
+                  <div class="col-lg-10">
+                    <h4>User control interface</h4>
+                      <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3">Quality(from 1 to 10 where 10 is lossless):</span>
+                        <input type="number" name="Quality" id="Quality" class="form-control" aria-describedby="sizing-addon3">
+                      </div>               
+                      <div class="input-group input-group-sm">
+                        <span class="input-group-addon" id="sizing-addon3">DPI(the PDF file dpi to resample):</span>
+                        <input type="number" name="DPI" id="DPI"  class="form-control" aria-describedby="sizing-addon3">
+                     </div>
+                  </div>
+               
+                  <input type="file" id = "file" class="btn btn-primary mt-8" name="logo"/>
+                  <input type="submit" class="btn btn-primary mt-8" method="post"id = "upload" value="Upload">
+
+            </div>
+          </form> 
     </div>
 
   </section><!-- #upload -->
@@ -93,23 +108,25 @@
               <h2>How to reduce a PDF size online:</h2>
               <br>
               <ul>
-                <li>1. To start, upload your file to our PDF compressor.</li>
-                <li>2. Our tool will automatically start to shrink the file.</li>
-                <li>3. Download the compressed PDF file to your computer.</li>
-                <li>4. Delete your files if you want to.</li>
+                <li><strong>1. Set quality(1-10) where 10 is the highest quality. 
+                  <br> &nbsp;&nbsp;&nbsp;&nbsp;Set DPI for you PDF (50 - 500). 
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;upload your file to our PDF compressor.</strong></li>
+                <li><strong>2. Our tool will automatically start to shrink the file.</strong></li>
+                <li><strong>3. Download the compressed PDF file.</strong></li>
+                <li><strong>4. Delete your files if you want to.</strong></li>
               </ul>
             </div>
 
             <div class = "filelist">
               <button type="button" id="submit" class="btn btn-success" disabled="">File List</button>
+              <br></br>
+              <br>
               <ul id="filelist" class="list-unstyled"></ul>
               <!-- <img src="img/about-img.png" alt="About"> -->
             </div>
-
           </div>
         </div>
-   
-  </section>
+</section>
 
   <!--==========================
     Team Section
@@ -190,7 +207,7 @@
             <br>
             <div>
               <i class="fa fa-phone"></i>
-              <p>+1 2065918120</p>
+              <p>+1 206*******</p>
             </div>
           </div>
         </div>
@@ -271,7 +288,6 @@
   <script type="text/javascript" src="script.js"></script>
 
   <script> 
-  // var total = 0;
     $(function(){
         init();
     })

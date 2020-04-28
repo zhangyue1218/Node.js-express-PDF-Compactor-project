@@ -46,7 +46,7 @@
           <li><a href="#about-us">用户</a></li>
           <li><a href="#team">团队</a></li>
           <li><a href="#contact">联系我们</a></li>
-          <li class="menu-has-children" ><a href="">语言</a>
+          <li class="menu-has-children" ><a href="http://localhost:3100/ch">语言</a>
             <ul>
               <li><a href="http://localhost:3100">English</a></li>
               <li><a href="http://localhost:3100/ch">中文</a></li>
@@ -67,9 +67,22 @@
       <h1>欢迎来到pdf压缩器</h1>
       <h2> </h2>
       <img src="img/hero-img.png" alt="Hero Imgs">
-      <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" class="btn btn-primary mt-8" name="logo"/>
-        <input type="submit" class="btn btn-primary mt-8" method="post"id = "upload" value="上传">
+      <form id="uploadForm" action="/upload" method="post" role="form" enctype="multipart/form-data">
+        <div calss = "row">
+              <div class="col-lg-10">
+                <h4>用户控制界面</h4>
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon" id="sizing-addon3">有损压缩模式的质量(从1到10，10为无损): </span>
+                    <input type="number" name="Quality" id="Quality" class="form-control" aria-describedby="sizing-addon3">
+                  </div>               
+                  <div class="input-group input-group-sm">
+                    <span class="input-group-addon" id="sizing-addon3">重采样dpi(文件dpi将重新采样):</span>
+                    <input type="number" name="DPI" id="DPI"  class="form-control" aria-describedby="sizing-addon3">
+                 </div>
+              </div>
+              <input type="file" class="btn btn-primary mt-8" name="logo"/>
+              <input type="submit" class="btn btn-primary mt-8" method="post"id = "upload" value="上传">
+        </div>
       </form> 
     </div>
 
@@ -93,15 +106,19 @@
               <h2>怎样压缩你的pdf:</h2>
               <br>
               <ul>
-                <li><strong>1. 上传你的文件到我们的pdf压缩系统。</strong></li>
+                <li><strong>1. 设置压缩后文件的无损质量，从1到10，10为无损压缩.<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;设置压缩文件的dpi，建议50到500之间<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;选择你的文件开始上传吧</strong></li>
                 <li><strong>2. 我们的工具将会自动压缩你的pdf。</strong></li>
                 <li><strong>3. 下载压缩好的pdf到你的电脑。</strong></li>
                 <li><strong>4. 删除任意你不需要的文件。</strong></li>
               </ul>
             </div>
-
+         
             <div class = "filelist">
               <button type="button" id="submit" class="btn btn-success" disabled="">文件列表</button>
+              <br></br>
+              <br>
               <ul id="filelist" class="list-unstyled"></ul>
               <!-- <img src="img/about-img.png" alt="About"> -->
             </div>
