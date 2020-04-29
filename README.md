@@ -21,8 +21,6 @@
 * Store the uploaded files in our own (NodeJS or Python) server.
 * compact the PDF from large size to small size.
 * Implement API endpoints to a file list, user can download, and remove files for user.
-![](manage files.png)
-
 * can send email to producer. use [nodemailer](https://nodemailer.com/message/).
 * can support English and Chinese.
 * show the total Web Hit.
