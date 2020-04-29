@@ -44,6 +44,8 @@ $ npm install @pdftron/pdfnet-node
 ```bash
 $ node app.js
 ```
+## Future Work
+* we will add more functions, such as PDF convert, combining pdf, image compress ...
 
 ## More
 This project is for USC EE599 project. :blush:
