@@ -46,9 +46,12 @@ $ node app.js
 ```
 ## Future Work
 * we will add more functions, such as PDF convert, combining pdf, image compress ...
-
+* develop an app which can help user easily use it on phone.
 ## More
 This project is for USC EE599 project. :blush:
+### video
+https://www.youtube.com/watch?v=dTfH1ywOwzk&feature=youtu.be
+
 ![](upload.png)
 ![](manage.png)
 ![](sendemail.png)
